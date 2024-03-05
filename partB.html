@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Cart</title>
+    <style>
+        /* CSS for styling the page */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            font-size: 16px;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        nav {
+            background-color: #555;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .container {
+            display: flex;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            overflow-x: auto;
+        }
+        .product {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-right: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .container::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .container {
+                align-items: stretch;
+            }
+            .product {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online Shopping Cart</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Cart</a>
+    </nav>
+    <div class="container">
+        <div class="product">
+            <h2>Flax seed</h2>
+            <img src="https://tse1.explicit.bing.net/th?id=OIP.nv3IklqTaxGQJMHKqJJKggHaGO&pid=Api&P=0&h=180" alt="Flax seed">
+            <p>Flax seeds are small oil seeds that contain omega-3 fats, fiber, and other plant compounds. They may help improve digestion and reduce the risk of heart disease, type 2 diabetes, and cancer.</p>
+            <p>Price: $20.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <h2>table lamp</h2>
+            <img src="https://tse2.mm.bing.net/th?id=OIP.na-w-xExBQlOCpGdEt05KAHaHa&pid=Api&P=0&h=180" alt="Table Lamp">
+            <p>Infuse style and functionality into your living room with a living room table lamp.</p>
+            <p>Price: $30.00</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
