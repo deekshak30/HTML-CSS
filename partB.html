@@ -4,20 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>News Portal</title>
     <style>
         * {
             font-family: 'Arial', sans-serif;
-            color: #333; 
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
+            color: #333;
         }
 
         header, button {
-            background-color: #e74c3c;
+            background-color: #3498db;
             padding: 10px;
             text-align: center;
         }
@@ -26,7 +21,7 @@
             display: inline-block;
             margin-top: 10px;
             padding: 8px 15px;
-            background-color: #3498db;
+            background-color: #e74c3c;
             color: #fff;
             border: none;
             cursor: pointer;
@@ -34,93 +29,68 @@
 
         nav {
             background-color: #f0f0f0;
-            padding: 10px;
+            padding: 5px;
             text-align: center;
         }
 
-        section {
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .col {
+            background-color: #f0f0f0;
             padding: 20px;
+            border-radius: 5px;
         }
 
         h2 {
-            color: #e74c3c;
+            color: #3498db;
         }
 
         p {
             line-height: 1.6;
         }
 
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 5px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        input,
-        textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-        }
-
-        button[type="submit"] {
-            background-color: #e74c3c;
+        a {
+            padding: 10px;
+            color: #3498db;
+            text-decoration: none;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
-        <button>Contact Me</button>
+        <h1>News Portal: Stay Informed</h1>
+        <button>Subscribe</button>
     </header>
     <nav>
         <p>
-            <a href="#">About</a> |
-            <a href="#">Skills</a> |
-            <a href="#">Contact</a>
+            <a href="#">World News</a> |
+            <a href="#">Technology</a> |
+            <a href="#">Entertainment</a>
         </p>
     </nav>
     <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I'm a passionate web developer with a love for creating interactive and user-friendly websites.
-            </p>
-        </section>
-        <section id="skills">
-            <h2>My Skills</h2>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>React</li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form>
-                <label for="DEEKSHA">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
+        <div class="col">
+            <h2>World News</h2>
+            <p>Stay updated with the latest global news and important events happening around the world.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="col">
+            <h2>Technology</h2>
+            <p>Explore the latest advancements in technology, gadget reviews, and tech industry updates.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="col">
+            <h2>Entertainment</h2>
+            <p>Get the scoop on celebrity news, movie releases, and entertainment industry highlights.</p>
+            <a href="#">Read More</a>
+        </div>
     </div>
 </body>
 
