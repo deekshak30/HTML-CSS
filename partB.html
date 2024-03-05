@@ -1,94 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Shopping Cart</title>
+    <title>My Portfolio</title>
     <style>
-        /* CSS for styling the page */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            font-size: 16px;
+        * {
+            font-family: 'Arial', sans-serif;
+            color: #333; 
         }
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-        nav {
-            background-color: #555;
-            padding: 10px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
+
         .container {
-            display: flex;
-            align-items: flex-start;
-            max-width: 1200px;
+            max-width: 800px;
             margin: 0 auto;
+        }
+
+        header, button {
+            background-color: #e74c3c;
+            padding: 10px;
+            text-align: center;
+        }
+
+        button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        nav {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
             padding: 20px;
-            overflow-x: auto;
         }
-        .product {
-            flex: 1;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-sizing: border-box;
-            margin-right: 20px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+        h2 {
+            color: #e74c3c;
         }
-        .container::after {
-            content: "";
-            clear: both;
-            display: table;
+
+        p {
+            line-height: 1.6;
         }
-        
-        @media screen and (max-width: 768px) {
-            .container {
-                align-items: stretch;
-            }
-            .product {
-                width: 100%;
-                margin-right: 0;
-                margin-bottom: 20px;
-            }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        button[type="submit"] {
+            background-color: #e74c3c;
         }
     </style>
 </head>
+
 <body>
     <header>
-        <h1>Online Shopping Cart</h1>
+        <h1>Welcome to My Portfolio</h1>
+        <button>Contact Me</button>
     </header>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Products</a>
-        <a href="#">Cart</a>
+        <p>
+            <a href="#">About</a> |
+            <a href="#">Skills</a> |
+            <a href="#">Contact</a>
+        </p>
     </nav>
     <div class="container">
-        <div class="product">
-            <h2>Flax seed</h2>
-            <img src="https://tse1.explicit.bing.net/th?id=OIP.nv3IklqTaxGQJMHKqJJKggHaGO&pid=Api&P=0&h=180" alt="Flax seed">
-            <p>Flax seeds are small oil seeds that contain omega-3 fats, fiber, and other plant compounds. They may help improve digestion and reduce the risk of heart disease, type 2 diabetes, and cancer.</p>
-            <p>Price: $20.00</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="product">
-            <h2>table lamp</h2>
-            <img src="https://tse2.mm.bing.net/th?id=OIP.na-w-xExBQlOCpGdEt05KAHaHa&pid=Api&P=0&h=180" alt="Table Lamp">
-            <p>Infuse style and functionality into your living room with a living room table lamp.</p>
-            <p>Price: $30.00</p>
-            <button>Add to Cart</button>
-        </div>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I'm a passionate web developer with a love for creating interactive and user-friendly websites.
+            </p>
+        </section>
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="DEEKSHA">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
     </div>
 </body>
+
 </html>
 
 
-
+This code provides a basic structure for a personal portfolio website. Customize the content, styling, and sections based on your preferences and the information you want to showcase.
